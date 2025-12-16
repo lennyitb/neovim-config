@@ -12,9 +12,10 @@ mkdir -p ~/.config/nvim/ && curl -o ~/.config/nvim/init.lua https://raw.githubus
 * 'Lazy' plugin manager
 * commentary
 * surround
-* leap
-* hop
+* leap (sneak successor) 
+* hop (easymotion successor)
 * tokyonight colorscheme
+* vscode-neovim/Nvim UI+ support
 
 ## Mappings
 
@@ -31,4 +32,4 @@ mkdir -p ~/.config/nvim/ && curl -o ~/.config/nvim/init.lua https://raw.githubus
 
 ## Conclusion
 
-keep it simple.
+keep it simple. 👍
