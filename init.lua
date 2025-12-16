@@ -31,6 +31,16 @@ vim.keymap.set('n', 'ge', '$', { noremap = true })
 vim.keymap.set('n', '0', '^', { noremap = true })
 vim.keymap.set('n', '^', '0', { noremap = true })
 
+-- Hop mappings for w e b variants
+vim.keymap.set({'n', 'v'}, '<leader>w', ':HopWordAC<CR>', {silent = true})
+vim.keymap.set({'n', 'v'}, '<leader>b', ':HopWordBC<CR>', {silent = true})
+vim.keymap.set({'n', 'v'}, '<leader>e', function()
+  vim.cmd('HopWordAC')
+  vim.defer_fn(function()
+    vim.api.nvim_feedkeys('e', 'n', false)
+  end, 50)
+end, {silent = true})
+
 -- Install lazy. nvim plugin manager
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
