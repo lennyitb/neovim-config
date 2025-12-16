@@ -24,10 +24,11 @@ mkdir -p ~/.config/nvim/ && curl -o ~/.config/nvim/init.lua https://raw.githubus
 * switch `0` & `^`
 * `,` Leader
 
-##
-
 ## Settings
 
 * scrolloff 8
 * number & relativenumber
 
+## Conclusion
+
+keep it simple.
